@@ -6,6 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+  "layout",
+  "flexbox",
+  "grid",
+  "css"
+],
   "author": "TENG YUNG, LIN",
   "license": "MIT",
   "devDependencies": {
