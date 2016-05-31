@@ -1,0 +1,288 @@
+/* The MIT License (MIT)
+ * Copyright (c) 2016 <Teng Yung Lin>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+/*
+ * Grix is a simple & light flex-box base Grid system.
+ * support for phone, pad,  desktop.
+ * the document page is on github page. ()
+ *
+ * Have fun and hope you enjoy it.
+ */
+/* Set HTML padding, margin */
+body {
+  padding: 0px;
+  margin: 0px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* horizontal row setting */
+/* Row Basic Setting */
+.gx-row {
+  display: -webkit-box;
+  /*  Safari */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start; }
+  .gx-row .rev {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    -webkit-box-direction: row-reverse;
+    flex-direction: row-reverse; }
+  .gx-row .gx-right {
+    justify-content: flex-end; }
+  .gx-row .gx-left {
+    justify-content: flex-start; }
+  .gx-row div {
+    padding: 0 10px; }
+
+/* Vertical */
+/* Column Basic Setting */
+.gx-vert {
+  display: -webkit-box;
+  /*  Safari */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start; }
+  .gx-vert .gx-v-botm {
+    /* Bottom */
+    justify-content: flex-end; }
+  .gx-vert .gx-v-top {
+    justify-content: flex-start; }
+  .gx-vert .gx-v-right {
+    align-items: flex-end;
+    align-content: flex-end; }
+  .gx-vert div {
+    padding: 10px; }
+
+.gx-wfl-row {
+  /* Don't filled row width*/
+  align-items: flex-start; }
+
+/* ---------- General Optionos ---------- */
+/* Expand row height to 100%*/
+.gx-fh {
+  min-height: 100vh; }
+
+/* Control inside position */
+.gx-center {
+  justify-content: center; }
+
+/* Filled the space with this inside item*/
+.fill {
+  flex-grow: 2; }
+
+.fill-space {
+  justify-content: space-around; }
+
+/* ---------- Inside item ----------- */
+/* Insider Full page center */
+.sf-cen {
+  align-self: center; }
+
+/* Horizontal item width control */
+/* Vertical item Height */
+/* Small Devices looklike (<768px) */
+@media screen and (max-width: 767px) {
+  .gx-cols-1 > div {
+    flex-basis: 100%; }
+  .gx-cols-2 > div {
+    flex-basis: 50%; }
+  .gx-cols-3 > div {
+    flex-basis: 33.33%; }
+  .gx-cols-4 > div {
+    flex-basis: 25%; }
+  .gx-cols-5 > div {
+    flex-basis: 20%; }
+  .gx-cols-6 > div {
+    flex-basis: 16.66%; }
+  .gx-cols-7 > div {
+    flex-basis: 14.28%; }
+  .gx-cols-8 > div {
+    flex-basis: 12.5%; }
+  .gx-cols-9 > div {
+    flex-basis: 11.11%; }
+  .gx-cols-10 > div {
+    flex-basis: 10%; }
+  .gx-cols-11 > div {
+    flex-basis: 9.09%; }
+  .gx-cols-12 > div {
+    flex-basis: 8.33%; }
+  .s-hide {
+    display: none; } }
+
+/* All large Devices looklike (>768px) */
+@media screen and (min-width: 768px) {
+  .gx-colml-1 > div {
+    flex-basis: 100%; }
+  .gx-colml-2 > div {
+    flex-basis: 50%; }
+  .gx-colml-3 > div {
+    flex-basis: 33.33%; }
+  .gx-colml-4 > div {
+    flex-basis: 25%; }
+  .gx-colml-5 > div {
+    flex-basis: 20%; }
+  .gx-colml-6 > div {
+    flex-basis: 16.66%; }
+  .gx-colml-7 > div {
+    flex-basis: 14.28%; }
+  .gx-colml-8 > div {
+    flex-basis: 12.5%; }
+  .gx-colml-9 > div {
+    flex-basis: 11.11%; }
+  .gx-colml-10 > div {
+    flex-basis: 10%; }
+  .gx-colml-11 > div {
+    flex-basis: 9.09%; }
+  .gx-colml-12 > div {
+    flex-basis: 8.33%; }
+  .ml-hide {
+    display: none; } }
+
+/* Medium Devices looklike (>768px && <992) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gx-colm-1 > div {
+    flex-basis: 100%; }
+  .gx-colm-2 > div {
+    flex-basis: 50%; }
+  .gx-colm-3 > div {
+    flex-basis: 33.33%; }
+  .gx-colm-4 > div {
+    flex-basis: 25%; }
+  .gx-colm-5 > div {
+    flex-basis: 20%; }
+  .gx-colm-6 > div {
+    flex-basis: 16.66%; }
+  .gx-colm-7 > div {
+    flex-basis: 14.28%; }
+  .gx-colm-8 > div {
+    flex-basis: 12.5%; }
+  .gx-colm-9 > div {
+    flex-basis: 11.11%; }
+  .gx-colm-10 > div {
+    flex-basis: 10%; }
+  .gx-colm-11 > div {
+    flex-basis: 9.09%; }
+  .gx-colm-12 > div {
+    flex-basis: 8.33%; }
+  .m-hide {
+    display: none; } }
+
+/* Medium Devices looklike (>992)*/
+@media (min-width: 992px) {
+  .gx-coll-1 > div {
+    flex-basis: 100%; }
+  .gx-coll-2 > div {
+    flex-basis: 50%; }
+  .gx-coll-3 > div {
+    flex-basis: 33.33%; }
+  .gx-coll-4 > div {
+    flex-basis: 25%; }
+  .gx-coll-5 > div {
+    flex-basis: 20%; }
+  .gx-coll-6 > div {
+    flex-basis: 16.66%; }
+  .gx-coll-7 > div {
+    flex-basis: 14.28%; }
+  .gx-coll-8 > div {
+    flex-basis: 12.5%; }
+  .gx-coll-9 > div {
+    flex-basis: 11.11%; }
+  .gx-coll-10 > div {
+    flex-basis: 10%; }
+  .gx-coll-11 > div {
+    flex-basis: 9.09%; }
+  .gx-coll-12 > div {
+    flex-basis: 8.33%; }
+  .l-hide {
+    display: none; } }
+
+/* Vertical items height */
+.vh-1 {
+  flex-basis: 11.11vh; }
+
+.vh-2 {
+  flex-basis: 22.22vh; }
+
+.vh-3 {
+  flex-basis: 33.33vh; }
+
+.vh-4 {
+  flex-basis: 44.44vh; }
+
+.vh-5 {
+  flex-basis: 55.55vh; }
+
+.vh-6 {
+  flex-basis: 66.66vh; }
+
+.vh-7 {
+  flex-basis: 77.77vh; }
+
+.vh-8 {
+  flex-basis: 88.88vh; }
+
+.vh-9 {
+  flex-basis: 100vh; }
+
+/* Vertical offset */
+.v-ofset-1 {
+  margin-top: 11.11vh; }
+
+.v-ofset-2 {
+  margin-top: 22.22vh; }
+
+.v-ofset-3 {
+  margin-top: 33.33vh; }
+
+.v-ofset-4 {
+  margin-top: 44.44vh; }
+
+.v-ofset-5 {
+  margin-top: 55.55vh; }
+
+.v-ofset-6 {
+  margin-top: 66.66vh; }
+
+.v-ofset-7 {
+  margin-top: 77.77vh; }
+
+.v-ofset-8 {
+  margin-top: 88.88vh; }

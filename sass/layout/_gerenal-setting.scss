@@ -1,0 +1,19 @@
+/* ---------- General Optionos ---------- */
+/* Expand row height to 100%*/
+.gx-fh {
+    min-height: 100vh;
+}
+
+/* Control inside position */
+.gx-center {
+    justify-content:  center;
+}
+
+/* Filled the space with this inside item*/
+.fill {
+    flex-grow: 2;
+}
+
+.fill-space {
+    justify-content: space-around;
+}

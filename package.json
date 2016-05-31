@@ -1,0 +1,17 @@
+{
+  "name": "grix",
+  "version": "0.1.0",
+  "description": "Flex grid layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TENG YUNG, LIN",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-rename":"^1.2.2"
+  }
+}

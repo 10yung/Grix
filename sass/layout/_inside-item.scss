@@ -1,0 +1,261 @@
+/* ---------- Inside item ----------- */
+/* Insider Full page center */
+.sf-cen {
+    align-self: center;
+}
+/* Horizontal item width control */
+$w1: 100%;
+$w2: 50%;
+$w3: 33.33%;
+$w4: 25%;
+$w5: 20%;
+$w6: 16.66%;
+$w7: 14.28%;
+$w8: 12.5%;
+$w9: 11.11%;
+$w10: 10%;
+$w11: 9.09%;
+$w12: 8.33%;
+/* Vertical item Height */
+$v1: 11.11vh;
+$v2: 22.22vh;
+$v3: 33.33vh;
+$v4: 44.44vh;
+$v5: 55.55vh;
+$v6: 66.66vh;
+$v7: 77.77vh;
+$v8: 88.88vh;
+$v9: 100vh;
+
+/* Small Devices looklike (<768px) */
+@media screen and (max-width: 767px) {
+    .gx-cols-1 > div {
+        flex-basis: $w1;
+    }
+    .gx-cols-2 > div {
+        flex-basis: $w2;
+    }
+    .gx-cols-3 > div {
+        flex-basis: $w3;
+    }
+    .gx-cols-4 > div {
+        flex-basis: $w4;
+    }
+    .gx-cols-5 > div {
+        flex-basis: $w5;
+    }
+    .gx-cols-6 > div {
+        flex-basis: $w6;
+    }
+    .gx-cols-7 > div {
+        flex-basis: $w7;
+    }
+    .gx-cols-8 > div {
+        flex-basis: $w8;
+    }
+    .gx-cols-9 > div {
+        flex-basis: $w9;
+    }
+    .gx-cols-10 > div {
+        flex-basis: $w10;
+    }
+    .gx-cols-11 > div {
+        flex-basis: $w11;
+    }
+    .gx-cols-12 > div {
+        flex-basis: $w12;
+    }
+
+
+    .s-hide{
+        display: none;
+    }
+}
+
+/* All large Devices looklike (>768px) */
+@media screen and (min-width: 768px) {
+    .gx-colml-1 > div {
+        flex-basis: $w1;
+    }
+    .gx-colml-2 > div {
+        flex-basis: $w2;
+    }
+    .gx-colml-3 > div {
+        flex-basis: $w3;
+    }
+    .gx-colml-4 > div {
+        flex-basis: $w4;
+    }
+    .gx-colml-5 > div {
+        flex-basis: $w5;
+    }
+    .gx-colml-6 > div {
+        flex-basis: $w6;
+    }
+    .gx-colml-7 > div {
+        flex-basis: $w7;
+    }
+    .gx-colml-8 > div {
+        flex-basis: $w8;
+    }
+    .gx-colml-9 > div {
+        flex-basis: $w9;
+    }
+    .gx-colml-10 > div {
+        flex-basis: $w10;
+    }
+    .gx-colml-11 > div {
+        flex-basis: $w11;
+    }
+    .gx-colml-12 > div {
+        flex-basis: $w12;
+    }
+
+
+    .ml-hide{
+        display: none;
+    }
+}
+
+/* Medium Devices looklike (>768px && <992) */
+@media  screen and (min-width: 768px) and (max-width: 991px) {
+    .gx-colm-1 > div {
+        flex-basis: $w1;
+    }
+    .gx-colm-2 > div {
+        flex-basis: $w2;
+    }
+    .gx-colm-3 > div {
+        flex-basis: $w3;
+    }
+    .gx-colm-4 > div {
+        flex-basis: $w4;
+    }
+    .gx-colm-5 > div {
+        flex-basis: $w5;
+    }
+    .gx-colm-6 > div {
+        flex-basis: $w6;
+    }
+    .gx-colm-7 > div {
+        flex-basis: $w7;
+    }
+    .gx-colm-8 > div {
+        flex-basis: $w8;
+    }
+    .gx-colm-9 > div {
+        flex-basis: $w9;
+    }
+    .gx-colm-10 > div {
+        flex-basis: $w10;
+    }
+    .gx-colm-11 > div {
+        flex-basis: $w11;
+    }
+    .gx-colm-12 > div {
+        flex-basis: $w12;
+    }
+
+    .m-hide{
+        display: none;
+    }
+}
+
+/* Medium Devices looklike (>992)*/
+@media (min-width: 992px) {
+    .gx-coll-1 > div {
+        flex-basis: $w1;
+    }
+    .gx-coll-2 > div {
+        flex-basis: $w2;
+    }
+    .gx-coll-3 > div {
+        flex-basis: $w3;
+    }
+    .gx-coll-4 > div {
+        flex-basis: $w4;
+    }
+    .gx-coll-5 > div {
+        flex-basis: $w5;
+    }
+    .gx-coll-6 > div {
+        flex-basis: $w6;
+    }
+    .gx-coll-7 > div {
+        flex-basis: $w7;
+    }
+    .gx-coll-8 > div {
+        flex-basis: $w8;
+    }
+    .gx-coll-9 > div {
+        flex-basis: $w9;
+    }
+    .gx-coll-10 > div {
+        flex-basis: $w10;
+    }
+    .gx-coll-11 > div {
+        flex-basis: $w11;
+    }
+    .gx-coll-12 > div {
+        flex-basis: $w12;
+    }
+
+    .l-hide{
+        display: none;
+    }
+}
+
+/* Vertical items height */
+.vh-1 {
+    flex-basis: $v1;
+}
+.vh-2 {
+    flex-basis: $v2;
+}
+.vh-3 {
+    flex-basis: $v3;
+}
+.vh-4 {
+    flex-basis: $v4;
+}
+.vh-5 {
+    flex-basis: $v5;
+}
+.vh-6 {
+    flex-basis: $v6;
+}
+.vh-7 {
+    flex-basis: $v7;
+}
+.vh-8 {
+    flex-basis: $v8;
+}
+.vh-9 {
+    flex-basis: $v9;
+}
+
+/* Vertical offset */
+.v-ofset-1 {
+    margin-top: $v1;
+}
+.v-ofset-2 {
+    margin-top: $v2;
+}
+.v-ofset-3 {
+    margin-top: $v3;
+}
+.v-ofset-4 {
+    margin-top: $v4;
+}
+.v-ofset-5 {
+    margin-top: $v5;
+}
+.v-ofset-6 {
+    margin-top: $v6;
+}
+.v-ofset-7 {
+    margin-top: $v7;
+}
+.v-ofset-8 {
+    margin-top: $v8;
+}
