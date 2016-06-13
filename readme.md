@@ -34,13 +34,13 @@ You can import Grix inside your `<head> </head>` tag and you are good to go!
 
 #### **There are also 4 kinds of Screen-size options in Grix. (inside gx-row)**
 
-Small Screen (for screen < 768px)  => gx-cols-*
+1. Small Screen (for screen < 768px)  => `gx-cols-*`
 
-Medimun Screen and Large Screen (for screen > 768px)  => gx-colml-*
+2. Medimun Screen and Large Screen (for screen > 768px)  => `gx-colml-*`
 
-Medimun Screen (for screen > 768px and screen < 992px) => gx-colm-*
+3. Medimun Screen (for screen > 768px and screen < 992px) => `gx-colm-*`
 
-Large Screen (for screen > 992px) => gx-coll-*
+4. Large Screen (for screen > 992px) => `gx-coll-*`
 
 #### **Vertical option also build inside Grix. Default with 10 rows within one column.**
 
