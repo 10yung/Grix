@@ -11,7 +11,7 @@ You can import Grix inside your `<head> </head>` tag and you are good to go!
 <link rel="stylesheet" href="./dist/style/grix.min.css">
 ```
 
-* **In Grix, you can use outer `div` to control number of inner `div`.**
+#### **In Grix, you can use outer `div` to control number of inner `div`.**
 
     The following syntax can create 4 columns (each width 25% ) in one row.
 
@@ -32,7 +32,7 @@ You can import Grix inside your `<head> </head>` tag and you are good to go!
 </div>
 ```
 
-* **There are also 4 kinds of Screen-size options in Grix. (inside gx-row)**
+#### **There are also 4 kinds of Screen-size options in Grix. (inside gx-row)**
 
 Small Screen (for screen < 768px)  => gx-cols-*
 
@@ -42,7 +42,7 @@ Medimun Screen (for screen > 768px and screen < 992px) => gx-colm-*
 
 Large Screen (for screen > 992px) => gx-coll-*
 
-* #### **Vertical option also build inside Grix. Default with 10 rows within one column.**
+#### **Vertical option also build inside Grix. Default with 10 rows within one column.**
 
 here are some sample code.
 
