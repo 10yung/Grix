@@ -42,7 +42,7 @@ Medimun Screen (for screen > 768px and screen < 992px) => gx-colm-*
 
 Large Screen (for screen > 992px) => gx-coll-*
 
-* #### **Vertical option also build inside Grix. Default with 10 rows within one column.** ####
+* #### **Vertical option also build inside Grix. Default with 10 rows within one column.**
 
 here are some sample code.
 
