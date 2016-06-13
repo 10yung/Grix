@@ -7,16 +7,18 @@ Easy to use Grid system base on `flex` display property.
 You can import Grix inside your `<head> </head>` tag and you are good to go!
 
 
-```<link rel="stylesheet" href="./dist/style/grix.min.css">```
+```HTML
+<link rel="stylesheet" href="./dist/style/grix.min.css">
+```
 
 
 ------
 
-* #### In Grix, you can use outer `div` to control number of inner `div`.####
+* #### In Grix, you can use outer `div` to control number of inner `div`.
 
     The following syntax can create 4 columns(each width 25% ) in one row.
 
-```
+```HTML
 <div class="gx-row gx-cols-4 gx-colml-4">
     <div>
         25% width
@@ -33,7 +35,7 @@ You can import Grix inside your `<head> </head>` tag and you are good to go!
 </div>
 ```
 
-* ####There are also 4 kinds of Screen-size options in Grix. (inside gx-row)####
+* #### There are also 4 kinds of Screen-size options in Grix. (inside gx-row)####
 
 Small Screen (for screen < 768px)  => gx-cols-*
 
@@ -47,7 +49,7 @@ Large Screen (for screen > 992px) => gx-coll-*
 
 here are some sample code.
 
-```
+```HTML
 <div class="gx-vert gx-fh">
     <div class="vh-1">
         height 11.11%
