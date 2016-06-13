@@ -11,9 +11,6 @@ You can import Grix inside your `<head> </head>` tag and you are good to go!
 <link rel="stylesheet" href="./dist/style/grix.min.css">
 ```
 
-
-------
-
 * #### In Grix, you can use outer `div` to control number of inner `div`.
 
     The following syntax can create 4 columns(each width 25% ) in one row.
