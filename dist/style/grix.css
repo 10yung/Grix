@@ -46,17 +46,20 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start; }
-  .gx-row .rev {
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    -webkit-box-direction: row-reverse;
-    flex-direction: row-reverse; }
-  .gx-row .gx-right {
-    justify-content: flex-end; }
-  .gx-row .gx-left {
-    justify-content: flex-start; }
   .gx-row div {
     padding: 0 10px; }
+
+.rev {
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -webkit-box-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.gx-right {
+  justify-content: flex-end; }
+
+.gx-left {
+  justify-content: flex-start; }
 
 /* Vertical */
 /* Column Basic Setting */
@@ -80,20 +83,23 @@ body {
   flex-wrap: wrap;
   align-items: stretch;
   align-content: flex-start; }
-  .gx-vert .gx-v-botm {
-    /* Bottom */
-    justify-content: flex-end; }
-  .gx-vert .gx-v-top {
-    justify-content: flex-start; }
-  .gx-vert .gx-v-right {
-    align-items: flex-end;
-    align-content: flex-end; }
   .gx-vert div {
     padding: 10px; }
 
 .gx-wfl-row {
   /* Don't filled row width*/
   align-items: flex-start; }
+
+.gx-v-botm {
+  /* Bottom */
+  justify-content: flex-end; }
+
+.gx-v-top {
+  justify-content: flex-start; }
+
+.gx-v-right {
+  align-items: flex-end;
+  align-content: flex-end; }
 
 /* ---------- General Optionos ---------- */
 /* Expand row height to 100%*/

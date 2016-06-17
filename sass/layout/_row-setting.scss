@@ -30,16 +30,16 @@
     align-items: flex-start;
     align-content: flex-start;
 
-    .rev {
-        @include flex-direction(row-reverse);
-    }
-    .gx-right {
-         justify-content:  flex-end;
-     }
-    .gx-left {
-         justify-content: flex-start;
-     }
      div{
          padding:0 10px;
      }
 }
+.rev {
+    @include flex-direction(row-reverse);
+}
+.gx-right {
+     justify-content:  flex-end;
+ }
+.gx-left {
+     justify-content: flex-start;
+ }

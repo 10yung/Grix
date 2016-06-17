@@ -30,17 +30,7 @@
     align-items: stretch;
     align-content: flex-start;
 
-    .gx-v-botm{
-        /* Bottom */
-        justify-content: flex-end;
-    }
-    .gx-v-top {
-        justify-content:  flex-start;
-    }
-    .gx-v-right {
-        align-items: flex-end;
-        align-content: flex-end;
-    }
+
      div{
          padding: 10px;
      }
@@ -50,4 +40,15 @@
 .gx-wfl-row {
     /* Don't filled row width*/
      align-items: flex-start;
+}
+.gx-v-botm{
+    /* Bottom */
+    justify-content: flex-end;
+}
+.gx-v-top {
+    justify-content:  flex-start;
+}
+.gx-v-right {
+    align-items: flex-end;
+    align-content: flex-end;
 }

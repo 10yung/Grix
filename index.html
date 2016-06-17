@@ -3,12 +3,667 @@
     <head>
         <meta charset="utf-8">
         <title>Grix</title>
+        <link rel="stylesheet" href="./dist/style/prism.css">
         <link rel="stylesheet" href="./dist/style/grix.min.css">
+        <script src="https://use.fontawesome.com/fa39673f40.js"></script>
+        <script src="./dist/style/prism.js"></script>
+
+
         <style>
-        
+            h1, h2, h3, h4, h5, h6, p {
+                color: #232323;
+                margin: 8px 0;
+                line-height: 1.5;
+            }
+            .gx-row > div, .gx-vert > div, .gx-fh {
+                background-clip:content-box; /* Paint without paddding */
+                background-color: #ececec;
+            }
+
+
+            .site {
+                padding: 30px 10px 0px 10px;
+            }
+            .site-header {
+                margin-bottom: 50px;
+            }
+            .site-header .gx-row > div {
+                background-color: #fff;
+                text-align: center;
+            }
+            .site-header .description {
+                border-bottom: 3px solid #232323;
+            }
+            .header-icon{
+                color: #77818c;
+                text-shadow: 2px 2px 3px #bcbcbc;
+            }
+            .header-icon:hover{
+                color: #929aa3;
+                text-shadow: none;
+                transition: color 0.5s,
+                            text-shadow 0.5s;
+            }
+            .site-content .gx-row > div {
+                margin: 5px 0;
+                text-align: center;
+            }
+            .feature {
+                padding: 0 10px;
+                background-color: #fff !important;
+                text-align: left !important;
+            }
+            /* table content area */
+            .screen-info > div {
+                padding: 0px;
+            }
+            .screen-info > div, .screen-info > div > .gx-row > div {
+                background: #fff;
+                margin: 0px;
+            }
+            .screen-info > div > .gx-row > div {
+                border: 1px solid #ececec;
+            }
+            .gx-syntax{
+                background: #f5f2f0;
+                border-radius: 2px;
+                color: #905;
+                padding: 3px 5px;
+                border: 1px solid #faf0e9;
+            }
+            .vertical-demo > div{
+                    background-clip:content-box; /* Paint without paddding */
+                    background-color: #d4d4d4;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            .github-button{
+                color: #fff;
+                background-color: #77818c;
+                padding: 20px 25px;
+                border-radius: 3px;
+                text-shadow: 2px 2px #474d54;
+                box-shadow: 3px 3px 3px #bcbcbc;
+            }
+            .github-button:hover{
+                background-color: #929aa3;
+                text-shadow: none;
+                box-shadow: none;
+                transition: box-shadow 0.6s,
+                            text-shadow 0.5s,
+                            background-color 0.7s ease;
+            }
+            .site-footer {
+                padding: 5px 10px 20px 10px;
+            }
+            .site-footer, .site-footer > .gx-row > div, .site-footer > .gx-row > div > h5{
+                background-color: #77818c;
+                color: #fff;
+            }
+            .site-footer > .gx-row > div > h5 > a:hover {
+                color: #fbd0cf;
+                transition: color 0.5s;
+            }
+            .blog-link{
+                text-decoration: underline;
+            }
+
         </style>
     </head>
     <body>
+        <div class="site-header">
+            <div class="gx-row gx-cols-4 gx-colml-4 gx-center">
+                <div>
+                    <h1>Grix</h1>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-2 gx-colml-2  gx-center">
+                <div class="description">
+                    <a href="#"><i class="fa fa-2x fa-github header-icon" aria-hidden="true"></i></a>
+                    <h3>Eazy, Lazy, Crazy lightway Flex-box Grid System</h3>
+                </div>
+            </div>
+        </div>
 
+        <!--**********Content Section**********-->
+        <div class="site-content">
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <div class="feature">
+                    <h3>Grix is a 12 columns (in each row) Grix system, you can use 1 ~ 12 columns as you like. Each column has 10px left and right padding.</h3>
+                    <h3>You can use outer div to control columns inside each row, so you don't have to type one by one when you create inner div.</h3>
+                    <h3>If the class has <span class="gx-syntax">gx-*</span> its for parent <span class="gx-syntax">&lt;div&gt;</span> , and without that prefix it's for child <span class="gx-syntax">&lt;div&gt;</span></h3>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                    <pre class="language-html" data-src="index.html">
+                        <code class=" language-html">
+<span style="color: #007700">&lt-- This means two columns in one row, each 50% width --&gt</span>
+<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;gx-row gx-cols-2 gx-colml-2&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>6<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>6<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+                        </code>
+                    </pre>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-1">
+                <div>
+                    <h5>12 / 1 width</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-2 gx-colml-2">
+                <div>
+                    <h5>12 / 2</h5>
+                </div>
+                <div>
+                    <h5>12 / 2</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-3 gx-colml-3">
+                <div>
+                    <h5>12 / 3</h5>
+                </div>
+                <div>
+                    <h5>12 / 3</h5>
+                </div>
+                <div>
+                    <h5>12 / 3</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-4 gx-colml-4">
+                <div>
+                    <h5>12 / 4</h5>
+                </div>
+                <div>
+                    <h5>12 / 4</h5>
+                </div>
+                <div>
+                    <h5>12 / 4</h5>
+                </div>
+                <div>
+                    <h5>12 / 4</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-5 gx-colml-5">
+                <div>
+                    <h5>12 / 5</h5>
+                </div>
+                <div>
+                    <h5>12 / 5</h5>
+                </div>
+                <div>
+                    <h5>12 / 5</h5>
+                </div>
+                <div>
+                    <h5>12 / 5</h5>
+                </div>
+                <div>
+                    <h5>12 / 5</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-6 gx-colml-6">
+                <div>
+                    <h5>12 / 6</h5>
+                </div>
+                <div>
+                    <h5>12 / 6</h5>
+                </div>
+                <div>
+                    <h5>12 / 6</h5>
+                </div>
+                <div>
+                    <h5>12 / 6</h5>
+                </div>
+                <div>
+                    <h5>12 / 6</h5>
+                </div>
+                <div>
+                    <h5>12 / 6</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-7 gx-colml-7">
+                <div>
+                    <h5>12 / 7</h5>
+                </div>
+                <div>
+                    <h5>12 / 7</h5>
+                </div>
+                <div>
+                    <h5>12 / 7</h5>
+                </div>
+                <div>
+                    <h5>12 / 7</h5>
+                </div>
+                <div>
+                    <h5>12 / 7</h5>
+                </div>
+                <div>
+                    <h5>12 / 7</h5>
+                </div>
+                <div>
+                    <h5>12 / 7</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-8 gx-colml-8">
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+                <div>
+                    <h5>12 / 8</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-9 gx-colml-9">
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+                <div>
+                    <h5>12 / 9</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-10 gx-colml-10">
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+                <div>
+                    <h5>12 / 10</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-11 gx-colml-11">
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+                <div>
+                    <h5>12 / 11</h5>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-6 gx-colml-12">
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+                <div>
+                    <h5>12 / 12</h5>
+                </div>
+            </div>
+
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <div class="feature">
+                    <h3>Grix is responsive design grid system.</h3>
+                    <h3>small device (screen < 767px) => for phone</h3>
+                    <h3>medium device (screen > 768 and < 991px) => for pad</h3>
+                    <h3>large device (screen > 992px) => for desktop</h3>
+                    <h3>medium and large device (screen > 767) => for pad and desktop</h3>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center screen-info">
+                <div>
+                    <div class="gx-row gx-cols-4 gx-colml-4">
+                        <div>
+                            <h5>Small</h5>
+                        </div>
+                        <div>
+                            <h5>Medium</h5>
+                        </div>
+                        <div>
+                            <h5>Large</h5>
+                        </div>
+                        <div>
+                            <h5>M & L</h5>
+                        </div>
+                    </div>
+                    <div class="gx-row gx-cols-4 gx-colml-4">
+                        <div>
+                            <h5> < 768px </h5>
+                        </div>
+                        <div>
+                            <h5> > 768px, < 992px</h5>
+                        </div>
+                        <div>
+                            <h5> > 992px</h5>
+                        </div>
+                        <div>
+                            <h5> > 768px</h5>
+                        </div>
+                    </div>
+                    <div class="gx-row gx-cols-4 gx-colml-4">
+                        <div>
+                            <h5>gx-cols-*</h5>
+                        </div>
+                        <div>
+                            <h5>gx-colm-*</h5>
+                        </div>
+                        <div>
+                            <h5>gx-coll-*</h5>
+                        </div>
+                        <div>
+                            <h5>gx-colml-*</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <div class="feature">
+                    <h3>The following means small screen has 2 columns, medium screen has 4 columns and large screen has 8 columns in each row.</h3>
+                    <h3>You can also Nest grix to create whatever you want!</h3>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-2 gx-colm-4 gx-coll-8">
+                                    <div>
+                                        <h5>grix</h5>
+                                    </div>
+                                    <div>
+                                        <h5>responsive</h5>
+                                    </div>
+                                    <div>
+                                        <h5>columns</h5>
+                                    </div>
+                                    <div>
+                                        <h5>small 3col</h5>
+                                    </div>
+                                    <div>
+                                        <h5>meduum 4col</h5>
+                                    </div>
+                                    <div>
+                                        <h5>large 8col</h5>
+                                    </div>
+                                    <div>
+                                        <h5>enjoy</h5>
+                                    </div>
+                                    <div>
+                                        <h5>thanks</h5>
+                                    </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <pre class="language-html" data-src="index.html">
+                    <code class=" language-html">
+<span style="color: #888888">&lt;!-- Small screen has 2 columns in each row,
+    Medium screen has 4 columns,
+    Large screen has 8 columns--&gt;</span>
+<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;gx-row gx-cols-2 gx-colm-4 gx-coll-8&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-cols-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-colm-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-coll-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-cols-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-colm-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-coll-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-coll-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div&gt;</span>
+        <span style="color: #007700">&lt;h5&gt;</span>gx-coll-*<span style="color: #007700">&lt;/h5&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <div class="feature">
+                    <h3>Grix have some class like <span class="gx-syntax">gx-fh</span> <span class="gx-syntax">gx-center</span> <span class="gx-syntax">fill</span> <span class="gx-syntax">fill-space</span> <span class="gx-syntax">sf-cen</span> to let you control layout</h3>
+                    <h3>1. You can use <span class="gx-syntax">gx-fh</span> to create full screen height.</h3>
+                    <h3>2. <span class="gx-syntax">gx-center</span> to center child  <span class="gx-syntax">&lt;div&gt;</span></h3>
+                    <h3>3. <span class="gx-syntax">fill</span> to fill space when you don't have enought child <span class="gx-syntax">&lt;div&gt;</span> </h3>
+                    <h3>4. <span class="gx-syntax">fill-space</span> will fill with equally space wrapper (if you dont have enought child <span class="gx-syntax">&lt;div&gt;</span>)</h3>
+                    <h3>5. <span class="gx-syntax">sf-cen</span> to make child <span class="gx-syntax">&lt;div&gt;</span> self center, always used in full page center.</h3>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <div class="feature" style="border-top:2px solid #ececec;margin-top:30px;">
+                    <h3>
+                        This is full screen height with self-center child <span class="gx-syntax">&lt;div&gt;</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <pre class="language-html" data-src="index.html" style="max-width:inherit;">
+                    <code class=" language-html">
+<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;gx-vert gx-center gx-fh&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;sf-cen&quot;</span><span style="color: #007700">&gt;</span>
+        <span style="color: #007700">&lt;h3&gt;</span>Full page centered !!! <span style="color: #007700">&lt;/h3&gt;</span>
+    <span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div class="gx-vert gx-center gx-fh">
+                <div class="sf-cen">
+                    <h3>Full page centered !!!</h3>
+                </div>
+            </div>
+            <div class="gx-row rev gx-cols-1 gx-colml-2">
+                <div class="feature">
+                    <h3>Grix also support vertical arragement. If you use <span class="gx-syntax">gx-vert</span> you can make child <span class="gx-syntax">&lt;div&gt;</span> stack from top to down. And you can use <span class="gx-syntax">gx-fh</span> to make it full screen height</h3>
+                    <br>
+                    <h3>
+                        Grix cut screen height into 9 sections. <br>And you can use <span class="gx-syntax">vh-*</span> to set child <span class="gx-syntax">&lt;div&gt;</span> height.
+                        If you use  <span class="gx-syntax">vh-1</span> means the height of that child <span class="gx-syntax">&lt;div&gt;</span> is 1/9 screen height.
+                    </h3>
+                    <h3>
+                        Once you use <span class="gx-syntax">vh-*</span> to arrange vertical object, Grix also has vertical offset <span class="gx-syntax">v-ofset-*</span> to let you
+                        easier to control your layout.
+                    </h3>
+                </div>
+                <div class="gx-vert vertical-demo">
+                    <div>
+                         <h3>vertical 1</h3>
+                    </div>
+                    <div>
+                          <h3>vertical 2</h3>
+                    </div>
+                    <div>
+                         <h3>vertical 3</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colml-2 gx-center">
+                <div class="feature" style="border-top:2px solid #ececec;margin-top:30px;">
+                    <h3>
+                        The following are some Grix vertical arragement ability.
+                        You can easy to arrange vertical object.
+                    </h3>
+                </div>
+            </div>
+            <div class="gx-row gx-cols-1 gx-colm-2 gx-coll-4">
+                <div class="gx-vert vertical-demo gx-fh">
+                    <div class="vh-1">
+                         <h3>with <span class="gx-syntax">vh-1</span></h3>
+                    </div>
+                    <div class="vh-1">
+                          <h3>1/9</h3>
+                    </div>
+                    <div class="vh-1">
+                         <h3>screen height</h3>
+                    </div>
+                    <div class="vh-2">
+                         <h3>with <span class="gx-syntax">vh-2</span></h3>
+                    </div>
+                    <div class="vh-2">
+                          <h3>2/9</h3>
+                    </div>
+                    <div class="vh-2">
+                         <h3>screen height</h3>
+                    </div>
+                </div>
+                <div class="gx-vert vertical-demo gx-fh gx-center">
+                    <div>
+                         <h3>with <span class="gx-syntax">gx-center</span></h3>
+                    </div>
+                    <div>
+                          <h3>in vertical</h3>
+                    </div>
+                </div>
+                <div class="gx-vert vertical-demo gx-fh gx-v-botm">
+                    <div>
+                         <h3>Stick to Bottom</h3>
+                    </div>
+                    <div>
+                        <h3>with <span class="gx-syntax">gx-v-botm</span></h3>
+                    </div>
+                </div>
+                <div class="gx-vert rev vertical-demo gx-fh">
+                    <div class="vh-1">
+                         <h3>vh-1<h3>
+                    </div>
+                    <div class="vh-1">
+                          <h3>with</h3>
+                    </div>
+                    <div class="vh-1 v-ofset-6">
+                         <h3><span class="gx-syntax">v-ofset-6</span></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Github Download Page Button -->
+            <div class="gx-row gx-cols-2 gx-colml-5 gx-center">
+                <div class="feature" style="flex: inherit; margin: 70px 0px;">
+                    <a href="#" class="github-button"><i class="fa fa-github-alt" aria-hidden="true"></i> View on Github</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="site-footer">
+            <div class="gx-row gx-cols-1 gx-colml-2">
+                <div style="text-align:center;">
+                    <h5>Copyright (c) 2016. Teng Yung Lin</h5>
+                </div>
+                <div style="text-align:center;">
+                    <h5><a href="http://andyno10.github.io/" class="blog-link"><i class="fa fa-github" aria-hidden="true"></i> andyNo.10</a> </h5>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
