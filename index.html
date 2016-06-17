@@ -95,8 +95,29 @@
                             text-shadow 0.5s,
                             background-color 0.7s ease;
             }
+            .download-button{
+                color: #77818c;
+                background-color: #fff;
+                padding: 18px 23px;
+                border-radius: 3px;
+                border: 2px solid #77818c;
+                text-shadow: 2px 2px #ececec;
+                box-shadow: 3px 3px 3px #ececec;
+            }
+            .download-button:hover{
+                color: #fff;
+                background-color: #929aa3;
+                text-shadow: none;
+                border-color: #929aa3;
+                box-shadow: none;
+                transition: color 0.5s,
+                            box-shadow 0.6s,
+                            text-shadow 0.5s,
+                            background-color 0.7s ease;
+            }
             .site-footer {
                 padding: 5px 10px 20px 10px;
+                margin: 50px 0 0 0;
             }
             .site-footer, .site-footer > .gx-row > div, .site-footer > .gx-row > div > h5{
                 background-color: #77818c;
@@ -648,9 +669,12 @@
                 </div>
             </div>
             <!-- Github Download Page Button -->
-            <div class="gx-row gx-cols-2 gx-colml-5 gx-center">
-                <div class="feature" style="flex: inherit; margin: 70px 0px;">
+            <div class="gx-row gx-cols-2 gx-colml-5 gx-center" style="margin-top:30px;" >
+                <div class="feature" style="flex: inherit; margin: 30px 0px;">
                     <a href="https://github.com/andyNo10/Grix" class="github-button"><i class="fa fa-github-alt" aria-hidden="true"></i> View on Github</a>
+                </div>
+                <div class="feature" style="flex: inherit; margin: 30px 0px;">
+                    <a href="//raw.githubusercontent.com/andyNo10/Grix/master/dist/style/grix.css" class="download-button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download Css</a>
                 </div>
             </div>
 
