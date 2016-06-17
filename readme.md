@@ -83,7 +83,8 @@ here are some sample code.
 
 ## More detail
 
-if you want to see more detail, please see my demo-page or download index.html file.
+
+if you want to see more detail, please see my [Demo Page](http://andyno10.github.io/Grix/) or download index.html file.
 
 
 Thanks and enjoy!
